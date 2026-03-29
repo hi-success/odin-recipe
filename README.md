@@ -1,55 +1,52 @@
-# File Search Program in C
+# File Name Search Program in C
 
 ## Description
-This project is a simple file search program written in C.
-It allows the user to enter a word and checks whether that word can be found inside a file.
+This project is a simple C program that allows the user to enter three file names and a search word.
+
+The program checks whether the search word appears inside any of the entered file names and displays the result.
 
 ## Features
-- Accepts user input for a search word
-- Opens and reads a text file
-- Searches for a matching word inside the file
-- Displays whether the word was found or not
+- Accepts three file names from the user
+- Accepts a search word
+- Checks if the search word exists inside each file name
+- Displays whether a match was found or not
 
 ## Technologies Used
 - C Programming Language
 - Standard C Libraries (`stdio.h`, `string.h`)
 
 ## How It Works
-1. The user enters a word to search for
-2. The program opens a file
-3. It reads the content of the file
-4. It compares the entered word with the file content
-5. It displays the result
-
-## How to Run
-1. Open the project in Code::Blocks or any C compiler
-2. Compile the program
-3. Run the executable
-4. Enter the word you want to search for
+1. The user enters three file names
+2. The user enters a search word
+3. The program checks each file name using string search
+4. It displays whether a match exists in each file name
 
 ## Example Use Case
-If the file contains:
+If the user enters:
 
-apple
-banana
-orange
+File names:
+- assignment.txt
+- report.doc
+- project_notes.pdf
 
-And the user searches for:
+Search word:
+- port
 
-banana
-
-The program will display that the word was found.
+Output:
+- assignment.txt -> No match found.
+- report.doc -> Match found!
+- project_notes.pdf -> No match found.
 
 ## What I Learned
 This project helped me practice:
-- file handling in C
-- string comparison
-- loops
+- strings in C
 - user input
+- the `strstr()` function
+- conditional statements
 - problem solving
 
 ## Future Improvements
+- Allow more than three file names
 - Make the search case-insensitive
-- Search full sentences, not just single words
-- Count how many times a word appears
-- Allow searching through multiple files
+- Search inside actual file contents
+- Store file names in an array for better structure
